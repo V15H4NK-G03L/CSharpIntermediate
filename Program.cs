@@ -23,7 +23,7 @@ namespace CSharpIntermediate
             string errorMessage = Console.ReadLine();
             Logger.WriteLog(errorMessage);
             Console.WriteLine($"The Error Message : \"{errorMessage}\" was successfully written to the log file.");
-            Console.WriteLine("Press any key to end the program!");
+            Console.WriteLine("Press any key to end this logger!");
             Console.ReadKey();
 
             var person = new Person();
@@ -34,9 +34,10 @@ namespace CSharpIntermediate
             Console.WriteLine(customer.Id);
             Console.WriteLine(customer.Name);
 
+            var accessModifiers = new AccessModifiers(new DateTime(1900,1,1));
+            Console.WriteLine("The Age of the Person is : " + accessModifiers.Age);
 
             Console.ReadKey();
-
         }
     }
 }

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessModifiers.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
