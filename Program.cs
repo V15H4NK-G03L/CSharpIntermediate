@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediate
 {
+
+    public class Car : Vehicle
+    {
+        public Car(string registrationNumber)
+            : base(registrationNumber)
+        {
+            Console.WriteLine("Car is being initialized. {0}", registrationNumber);
+        }
+    }
     public class Person
     {
         public string Name;
@@ -36,6 +45,9 @@ namespace CSharpIntermediate
 
             var accessModifiers = new AccessModifiers(new DateTime(1900,1,1));
             Console.WriteLine("The Age of the Person is : " + accessModifiers.Age);
+
+            var car = new Car("ABCD1234");
+
 
             Console.ReadKey();
         }
