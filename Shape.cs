@@ -19,4 +19,12 @@ namespace CSharpIntermediate
         public abstract void Draw();
     }
 
+    //public sealed class Shape
+    //{
+    //    public void Draw()
+    //    {
+    //        Console.WriteLine("Sealed Class");
+    //    }
+    //}
+
 }
