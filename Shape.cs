@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediate
 {
-    public class Shape
+    //public class Shape
+    //{
+    //    public virtual void Draw()
+    //    {
+    //        Console.WriteLine("Hello Shapes");
+    //    }
+    //}
+
+    public abstract class Shape
     {
-        public virtual void Draw()
-        {
-            Console.WriteLine("Hello Shapes");
-        }
+        public abstract void Draw();
     }
+
 }

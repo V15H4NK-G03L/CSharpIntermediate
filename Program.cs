@@ -11,7 +11,7 @@ namespace CSharpIntermediate
         public override void Draw()
         {
             Console.WriteLine("Hello Circle!");
-            base.Draw();
+            //base.Draw();
         }
     }
     public class Car : Vehicle
