@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediate
 {
-
+    public class Circle : Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Hello Circle!");
+            base.Draw();
+        }
+    }
     public class Car : Vehicle
     {
         public Car(string registrationNumber)
@@ -48,6 +55,8 @@ namespace CSharpIntermediate
 
             var car = new Car("ABCD1234");
 
+            var oval = new Circle();
+            oval.Draw();
 
             Console.ReadKey();
         }
